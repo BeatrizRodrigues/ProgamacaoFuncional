@@ -14,7 +14,9 @@ public class Test {
 	    list.add(6);
 		int n = 2;		
 		Sum sum = new Sum(n, list);
+		long start = System.currentTimeMillis();
 		
         System.out.println(sum.sum.apply(0));
+        System.out.println("Tempo de execução: " + (System.currentTimeMillis()-start));
 	}
 }
